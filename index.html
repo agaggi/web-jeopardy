@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Jeopardy!</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Descriptions etc. -->
+        <meta name="description" content="web-jeopardy">
+        <meta name="author" content="Alex">
+
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <h1 style="text-align: center; color: #FFCC00">Jeopardy!</h1>
+
+        <div id="modal">
+            <p id="question_header" style="font-size: 1.25em; text-align: center;"></p>
+            <hr width="90%">
+
+            <div style="text-align: center">
+                <p id="question_body"></p>
+
+                <input type="text" placeholder="Type your answer here..." id="answer">
+                <button type="submit" style="height: 1.8em" id="submit_btn">
+                    Submit
+                </button>
+
+                <br><br>
+
+                <details>
+                    <summary>Show Answer</summary>
+                    <span id="solution"></span>
+                </details>
+            </div>
+        </div>
+
+        <div id="overlay"></div>
+
+        <div class="category_grid"></div>
+        <br>
+        <div class="question_grid"></div>
+
+        <script type="module" src="./js/main.js"></script>
+    </body>
+</html>
